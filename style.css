@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, blue, rgb(212, 0, 212))
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.to-do {
+    width: 100%;
+    max-width: 70vh;
+    margin: 10rem auto 1rem;
+    padding: 5rem;
+    border-radius: 12px;
+    background-color: rgb(253, 232, 214);
+}
+
+.to-do h2 {
+    color: rgb(45, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+}
+
+.to-do h2 img{
+    width: 60px;
+    margin:  .7rem;
+}
+.box{
+    display: flex;align-items: center;
+    justify-content: space-between;
+    background-color: rgb(172, 172, 172);
+    margin: 5px auto 1rem;
+    border-radius: 1.8rem;
+}
+.box input{
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+
+}
+.box button{
+    outline: none;
+    border: none;
+    border-radius: 1.8rem;
+    padding: 1rem 2rem;
+    background-color: rgb(237, 91, 0);
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+
+    }
+
+    #lists-box  li{
+        list-style: none;
+        margin: 4px 0;
+        padding: .5rem 6px;
+    }
+
+    #lists-box  li::before{
+        content: "";
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-image: url(./uncheck.png);
+        background-position: center;
+        background-size: cover;
+        margin: 0 -2rem  0;
+    }
